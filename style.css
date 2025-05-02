@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+section {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.profile-pic {
+    border-radius: 54%;
+    max-width: 299px;
+    margin-bottom: -2rem;
+    width: 101%;
+    object-fit: cover;
+
+
+
+    border-radius: 54%;
+    max-width: 299px;
+    margin-bottom: -2rem;
+    width: 101%;
+    object-fit: cover;
+}
+
+.link-items a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    background-color: rgb(219, 126, 20);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.link-items a:hover {
+    background-color: #f0f0f0;
+}
+
+.link-items i {
+    margin-right: 0.5rem;
+}
+ 
+h2.title.is-4{
+    margin-bottom: 15px;
+    color: rgb(219, 126, 20);
+}
+
+
+h3.title.is-5{
+    margin-bottom: 5rem;
+    color: rgb(219, 126, 20);
+}
+
+.title.is-6 {
+    margin-top: 3rem;
+    color: rgb(219, 126, 20);
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.background li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 0, 0, 0.559);
+    animation: animate 6s linear infinite;
+}
+
+.akan{
+    width: 124px;
+    padding: 2px 0px;
+    margin: auto;
+}
